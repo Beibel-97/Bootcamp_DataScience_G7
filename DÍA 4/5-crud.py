@@ -40,10 +40,26 @@ while(True):
         print("=" * ANCHO)
         print(" " * 10 + "REGISTRAR ALUMNO")
         print("=" * ANCHO)
+        
+        codigo = input("INGRESE DNI : ")
+        nombre = input("INGRESE NOMBRE : ")
+        email = input("INGRESE EMAIL : ")
+        dic_nuevo_alumno = {
+            'nombre':nombre,
+            'email':email
+        }
+        dic_alumnos[codigo] = dic_nuevo_alumno
+        print("Alumno registrado exitosamente.")
     if opcion == 2:
         print("=" * ANCHO)
         print(" " * 10 + "MOSTRAR ALUMNOS")
         print("=" * ANCHO)
+        
+        for codigo,info in dic_alumnos.items():
+            print(f"DNI : {codigo}")
+            print(f"NOMBRE : {info['nombre']}")
+            print(f"EMAIL : {info['email']}")
+            print("*"*ANCHO)
     if opcion == 3:
         print("=" * ANCHO)
         print(" " * 10 + "ACTUALIZAR ALUMNO")
