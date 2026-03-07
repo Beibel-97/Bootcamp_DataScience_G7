@@ -22,26 +22,13 @@ print(f"Lista ingresada : {numeros}")
 
 #Mostrar cuál es el número mayor.
 # [5,3,4,7,2]
-mayor = numeros[0]
-for num in numeros:
-    if num > mayor:
-        mayor = num
+mayor = max(numeros)
         
 print(f'el mayor es {mayor}')
-
-#Mostrar cuál es el número menor.
-
-menor = numeros[0]
-for num in numeros:
-    if num < menor:
-        menor = num
-        
+menor = min(numeros)
+#Mostrar cuál es el número menor.        
 print(f'el menor es {menor}')
 
-# Mostrar la lista ordenada de mayor a menor.
-for i in range(len(numeros)):
-    for j in range(len(numeros) - 1):
-        if numeros[j] < numeros[j + 1]:
-            numeros[j], numeros[j + 1] = numeros[j + 1], numeros[j]
-
+#Mostrar la lista ordenada de mayor a menor.
+numeros = sorted(numeros,reverse=True)
 print("Lista ordenada:", numeros)
