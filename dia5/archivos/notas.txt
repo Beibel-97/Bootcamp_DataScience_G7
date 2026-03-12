@@ -1,3 +1,0 @@
-Hola mundo en mi archivo
-Esta es un clase de Python
-esto es una marvilla
