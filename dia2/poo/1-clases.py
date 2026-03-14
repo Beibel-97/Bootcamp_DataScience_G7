@@ -26,9 +26,12 @@ class Automovil:
 #creamos un objeto (instancia) de la clase Automovil
 vw = Automovil(1970,'ch-1234','Amarillo','Volkswagen')
 vw.encender()
-vw.mostrar()
+vw.avanzar()
+vw.acelerar()
+vw.frenar()
 
 tico = Automovil(2000,'ch-5678','rojo','Daewoo')
 tico.encender()
+tico.avanzar()
 tico.acelerar()
 tico.frenar()
