@@ -1,0 +1,18 @@
+CREATE TABLE empresa(
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    ruc VARCHAR(20) NOT NULL,
+    razón_social VARCHAR(255) NOT NULL,
+    direccion VARCHAR(100)
+);
+ALTER TABLE empresa
+ADD COLUMN nota INT default 0;
+
+use db_matriculas;
+INSERT INTO empresa(ruc, razón_social, direccion)
+VALUES
+('20100070970', 'SUPERMERCADOS PERUANOS S.A.', 'Surquillo'),
+('20100128218', 'UNION DE CERVECERIAS PERUANAS BACKUS Y JOHNSTON S.A.', 'Ate'),
+('20100047218', 'SAGA FALABELLA S.A.', 'San Isidro'),
+('20505403487', 'TIENDAS POR DEPARTAMENTO RIPLEY S.A.C.', 'San Isidro'),
+('20505403488', 'AMERICA MOVIL PERU S.A.C.', 'Surco');
+
