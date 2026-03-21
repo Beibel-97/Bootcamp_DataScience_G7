@@ -1,5 +1,7 @@
+import email
 from tkinter import *
 from tkinter import messagebox
+from tkinter import dnd
 from tkinter.ttk import Treeview
 
 class TkAlumno:
@@ -81,7 +83,7 @@ class TkAlumno:
         else:
             messagebox.showerror('ALERTA',"POR FAVOR SELECCION UN REGISTRO")
         
-        nuevo_alumno = (dni,nombre,email)
+        nuevo_alumno = (dnd,nombre,email)
         self.tree.insert('',END,values=nuevo_alumno)
     
     
@@ -116,3 +118,4 @@ app = Tk()
 if __name__ == "__main__":
     app_alumno = TkAlumno(app)
     app.mainloop()
+    

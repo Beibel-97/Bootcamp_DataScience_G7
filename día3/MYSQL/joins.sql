@@ -1,0 +1,30 @@
+use db_matriculas;
+-- JOINS
+
+-- A ALUMNO
+-- B NOTA
+insert into alumno(nro_documento,nombre) values ('1001','Gabriel Sanchez');
+-- LEFT JOIN
+select alumno.nombre,nota.nota
+from alumno
+left join nota on nota.alumno_id = alumno.id
+
+select alumno.nombre,avg(nota.nota)
+from alumno left join nota on nota.alumno_id = alumno.id
+group by alumno.nombre;
+
+-- RIGTH JOIN
+insert into curso(nombre) values('Numpy y Pandas');
+
+select curso.nombre,avg(nota.nota)
+from nota right join curso on nota.curso_id = curso.id
+group by curso.nombre;
+
+-- INNER JOIN
+select alumno.nombre as alumno,
+curso.nombre as curso,
+nota.nota as nota
+from nota
+inner join alumno on nota.alumno_id = alumno.id
+inner join curso on nota.curso_id = curso.id
+order by alumno.nombre;
