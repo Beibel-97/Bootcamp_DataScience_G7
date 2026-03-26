@@ -1,2 +1,2 @@
-# Bootcamp_DataScience_G7
-Repositorio del Bootcamp de DATA SCIENCE G7
+# bootcamp_datascience_g7
+repositorio del bootcamp de data science grupo g7 codigo
