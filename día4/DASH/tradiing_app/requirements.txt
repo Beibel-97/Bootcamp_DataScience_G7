@@ -1,7 +1,0 @@
-dash
-pandas
-plotly
-seaborn
-yfinance
-gunicorn
-tzdata
