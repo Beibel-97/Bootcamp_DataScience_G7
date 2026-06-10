@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listado de Casas y Departamentos</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f4f7fb;
+        color: #1f2937;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background: #3b82f6;
+        color: white;
+        padding: 24px 16px;
+        text-align: center;
+      }
+
+      main {
+        max-width: 1000px;
+        margin: 24px auto;
+        padding: 0 16px 32px;
+      }
+
+      .card-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+      }
+
+      .card {
+        background: white;
+        border-radius: 14px;
+        box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+        overflow: hidden;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 16px 32px rgba(15, 23, 42, 0.12);
+      }
+
+      .card-header {
+        padding: 20px;
+        background: #eef2ff;
+      }
+
+      .card-header h2 {
+        margin: 0 0 8px;
+        font-size: 1.25rem;
+      }
+
+      .card-header span {
+        display: inline-block;
+        font-size: 0.95rem;
+        color: #475569;
+      }
+
+      .card-body {
+        padding: 20px;
+      }
+
+      .card-body p {
+        margin: 0 0 12px;
+        line-height: 1.6;
+      }
+
+      .card-body .price {
+        font-weight: 700;
+        color: #111827;
+        margin-bottom: 8px;
+      }
+
+      .details {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .detail-pill {
+        background: #e0e7ff;
+        color: #1e3a8a;
+        border-radius: 999px;
+        padding: 6px 12px;
+        font-size: 0.9rem;
+      }
+
+      footer {
+        text-align: center;
+        color: #64748b;
+        margin-top: 24px;
+        padding-bottom: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Listado de Casas y Departamentos</h1>
+      <p>Explora opciones de inmuebles con precios y número de habitaciones.</p>
+    </header>
+
+    <main>
+      <section class="card-list">
+        <article class="card">
+          <div class="card-header">
+            <h2>Casa en San Isidro</h2>
+            <span>Casa</span>
+          </div>
+          <div class="card-body">
+            <div class="price">S/ 850,000</div>
+            <p>Casa amplia y moderna con jardín, ubicada en una zona residencial tranquila.</p>
+            <div class="details">
+              <span class="detail-pill">4 habitaciones</span>
+              <span class="detail-pill">3 baños</span>
+              <span class="detail-pill">250 m²</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-header">
+            <h2>Departamento en Miraflores</h2>
+            <span>Departamento</span>
+          </div>
+          <div class="card-body">
+            <div class="price">S/ 620,000</div>
+            <p>Departamento céntrico con vista exterior, ideal para familias y ejecutivos.</p>
+            <div class="details">
+              <span class="detail-pill">3 habitaciones</span>
+              <span class="detail-pill">2 baños</span>
+              <span class="detail-pill">140 m²</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-header">
+            <h2>Casa en Barranco</h2>
+            <span>Casa</span>
+          </div>
+          <div class="card-body">
+            <div class="price">S/ 1,200,000</div>
+            <p>Excelente propiedad con acabados premium, ideal para vivir o invertir.</p>
+            <div class="details">
+              <span class="detail-pill">5 habitaciones</span>
+              <span class="detail-pill">4 baños</span>
+              <span class="detail-pill">320 m²</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-header">
+            <h2>Departamento en San Borja</h2>
+            <span>Departamento</span>
+          </div>
+          <div class="card-body">
+            <div class="price">S/ 540,000</div>
+            <p>Departamento funcional con áreas comunes modernas y buena iluminación natural.</p>
+            <div class="details">
+              <span class="detail-pill">2 habitaciones</span>
+              <span class="detail-pill">2 baños</span>
+              <span class="detail-pill">110 m²</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-header">
+            <h2>Casa en La Molina</h2>
+            <span>Casa</span>
+          </div>
+          <div class="card-body">
+            <div class="price">S/ 930,000</div>
+            <p>Casa familiar con área de patio y piscina, ubicada en un sector seguro.</p>
+            <div class="details">
+              <span class="detail-pill">4 habitaciones</span>
+              <span class="detail-pill">4 baños</span>
+              <span class="detail-pill">280 m²</span>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>Listado de inmuebles disponible para consulta.</p>
+    </footer>
+  </body>
+</html>
